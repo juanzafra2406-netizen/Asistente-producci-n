@@ -1,13 +1,8 @@
-
 import { GoogleGenAI } from "@google/genai";
 import { SYSTEM_INSTRUCTION } from '../constants';
 import { fetchDocumentContent } from './documentService';
 
-const API_KEY = process.env.API_KEY;
-
-if (!API_KEY) {
-  throw new Error("API_KEY environment variable not set");
-}
+const API_KEY = "AIzaSyBXbl7yujb3F626F1kuDkVkCR1eOmbjkSg";
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
 
